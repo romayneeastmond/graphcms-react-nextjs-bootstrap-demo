@@ -13,7 +13,8 @@ export const getStaticProps = async () => {
             welcome: dataWelcome,
             welcomeEpisode: dataWelcomeEpisodes,
             episodes: dataEpisodes
-        }
+        },
+        revalidate: 60
     }
 }
 
