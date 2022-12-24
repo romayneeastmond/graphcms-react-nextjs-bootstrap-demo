@@ -9,7 +9,7 @@ export const getStaticPaths = async () => {
     const paths = data.map((book) => {
         return {
             params: {
-                slug: book.url
+                slug: decodeURI(book.url).replace('book/', '')
             }
         }
     })
@@ -32,7 +32,8 @@ export const getStaticProps = async ({ params }) => {
     return {
         props: {
             book
-        }
+        },
+        revalidate: 60
     }
 }
 
