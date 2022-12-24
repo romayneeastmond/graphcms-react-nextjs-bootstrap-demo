@@ -5,7 +5,13 @@ import { getPage, getPagesUrls } from '../src/services/contentService'
 export const getStaticPaths = async () => {
     const data = (await getPagesUrls()) || []
 
-    const paths = data.map((page) => {
+    const paths = data.filter((page) => {
+        if (page.url && (page.url === 'episodes' || page.url === 'books')) {
+            return false
+        }
+
+        return true
+    }).map((page) => {
         return {
             params: {
                 slug: page.url
