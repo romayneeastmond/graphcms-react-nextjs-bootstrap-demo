@@ -1,0 +1,13 @@
+section {
+    &.half__page {
+        min-height: 50vh;
+    }
+
+    &.full__page {
+        min-height: 100vh;
+    }
+
+    &.quarter__page {
+        min-height: 25vh;
+    }
+}
