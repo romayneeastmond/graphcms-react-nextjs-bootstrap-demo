@@ -1,7 +1,8 @@
-html,
-body {
+html {
     margin: 0;
     overflow-wrap: break-word;
+    overflow-y: scroll;
+    overflow-x: hidden;
     padding: 0;
 }
 
@@ -10,6 +11,8 @@ body {
         Helvetica Neue, sans-serif;
     letter-spacing: 0.01rem;
     line-height: 1.75em;
+    margin: 0;
+    padding: 0;
 }
 
 * {
