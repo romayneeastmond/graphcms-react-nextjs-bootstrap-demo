@@ -9,7 +9,3 @@ The frontend Next.js website connects to the Hygraph data using an API url and k
 ## Copyright and Ownership
 
 All terms used are copyright to their original authors.
-
-## Live Demo
-
-Live demo hosted on Vercel [Hygraph (GraphCMS), React Next.js, and GraphQL Demo](http://graphcms-react-nextjs-bootstrap-demo.vercel.app/)
